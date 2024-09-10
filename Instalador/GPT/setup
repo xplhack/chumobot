@@ -235,7 +235,7 @@ Install_key() {
   Filotros="${SCPdir}/temp"
   IP=$(cat /root/.ssh/authrized_key.reg)
   function_verify() {
-    permited=$(curl -sSL "https://raw.githubusercontent.com/ChumoGH/ADMcgh/main/Instalador/Control-IP")
+    permited=$(curl -sSL "https://raw.githubusercontent.com/xplhack/chumobot/main/Instalador/Control-IP")
     [[ $(echo $permited | grep "${IP}") = "" ]] && {
       clear && clear
       echo -e "\n\n\n\033[1;91m————————————————————————————————————————————————————\n      ¡ESTA KEY NO CONCUERDA CON EL INSTALADOR! \n                 CONATACTE A @Kalix1\n————————————————————————————————————————————————————\n\n\n"
